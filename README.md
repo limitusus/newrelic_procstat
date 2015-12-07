@@ -33,7 +33,7 @@ Plugin requires the following packages
 
 Python package:
 
-   - python >= 2.7
+   - python >= 2.7 (>=2.7.9 recommended)
    - requests
    - psutil
    - PyYAML
