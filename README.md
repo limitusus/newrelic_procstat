@@ -1,7 +1,7 @@
 newrelic_procstat:
 ==================
 
-A Newrelic plugin to send detailed processes statistics to newrelic at a per process level.  Allowing you to gain a detailedinsight into process footprint on a server. This plugin allows you to collect detailed metrics of processes and forward them onto Newrelic, at present the plugin collects the following metrics at a per process level:
+A Newrelic plugin to send detailed processes statistics to newrelic at a per process level. Allowing you to gain a detailed insight into process footprint on a server. This plugin allows you to collect detailed metrics of processes and forward them onto Newrelic, at present the plugin collects the following metrics at a per process level:
    - Disk 
     - Megabytes read from block device
     - Megabytes written to block device
@@ -31,28 +31,36 @@ Requirements:
 =============
 Plugin requires the following packages
 
-   Python package:
-   - python 2.7 >
+Python package:
+
+   - python >= 2.7
    - requests
    - psutil
    - PyYAML
 
-   Linux packages:
-   - systat
+Linux packages:
+
+   - sysstat
 
 
 Installation:
 =============
 Clone repo
+
+```
  $ git clone https://github.com/AZaugg/newrelic_procstat.git
  $ nohup python newrelic_procstat/procstat.py & 
+```
 
 Configuration:
 ==============
-Edit the config.yml file and add the name of the process you want to monitor
+Edit the `config.yml` file and add the name of the process you want to monitor
 
 Run it:
 =======
+
+```
 nohup python procstat.py &
+```
 
 
